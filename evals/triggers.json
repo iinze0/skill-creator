@@ -1,0 +1,61 @@
+{
+  "skill": "skill-creator",
+  "test_cases": [
+    {
+      "input": "create new skills and iteratively improve them",
+      "should_trigger": true
+    },
+    {
+      "input": "I need to use the skill creator",
+      "should_trigger": true
+    },
+    {
+      "input": "creating skills",
+      "should_trigger": true
+    },
+    {
+      "input": "improving skills",
+      "should_trigger": true
+    },
+    {
+      "input": "running skill evals",
+      "should_trigger": true
+    },
+    {
+      "input": "optimizing descriptions",
+      "should_trigger": true
+    },
+    {
+      "input": "query BigQuery for grok analytics data",
+      "should_trigger": false
+    },
+    {
+      "input": "deploy a service to the kubernetes cluster",
+      "should_trigger": false
+    },
+    {
+      "input": "debug voice chat latency and error rates",
+      "should_trigger": false
+    },
+    {
+      "input": "run cargo clippy on a Rust crate",
+      "should_trigger": false
+    },
+    {
+      "input": "check Axiom logs for production errors",
+      "should_trigger": false
+    },
+    {
+      "input": "create a PySpark data processing job",
+      "should_trigger": false
+    },
+    {
+      "input": "manage Linear tickets and sprint planning",
+      "should_trigger": false
+    },
+    {
+      "input": "review code changes for a pull request",
+      "should_trigger": false
+    }
+  ]
+}

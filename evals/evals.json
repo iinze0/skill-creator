@@ -1,0 +1,32 @@
+{
+  "skill": "skill-creator",
+  "test_cases": [
+    {
+      "name": "creates_skill_with_proper_structure",
+      "input": "create a skill for data analysis",
+      "assertions": [
+        "Creates .grok/skills/data-analysis/ directory",
+        "SKILL.md has frontmatter with name, description, type, lifecycle",
+        "Creates CHANGELOG.md with initial entry",
+        "Creates evals/evals.json with 3+ test cases",
+        "Creates evals/triggers.json with 3+ triggers including negatives"
+      ]
+    },
+    {
+      "name": "runs_init_script",
+      "input": "create a new skill called api-client",
+      "assertions": [
+        "Runs init_skill.py or manually creates the required directory structure",
+        "Does NOT leave TODO placeholders in final SKILL.md"
+      ]
+    },
+    {
+      "name": "validates_before_finishing",
+      "input": "create a skill for kubernetes debugging",
+      "assertions": [
+        "Runs validate-skill.py on the new skill",
+        "Fixes any validation errors before finishing"
+      ]
+    }
+  ]
+}
